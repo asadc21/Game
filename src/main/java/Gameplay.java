@@ -47,7 +47,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 		map.draw((Graphics2D) g);
 		
 		// borders
-		g.setColor(Color.yellow);
+		g.setColor(Color.blue);
 		g.fillRect(0, 0, 3, 592);
 		g.fillRect(0, 0, 692, 3);
 		g.fillRect(691, 0, 3, 592);
@@ -58,11 +58,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 		g.drawString(""+score, 590,30);
 		
 		// the paddle
-		g.setColor(Color.green);
+		g.setColor(Color.red);
 		g.fillRect(playerX, 550, 100, 8);
 		
 		// the ball
-		g.setColor(Color.yellow);
+		g.setColor(Color.blue);
 		g.fillOval(ballposX, ballposY, 20, 20);
 	
 		// when you won the game
